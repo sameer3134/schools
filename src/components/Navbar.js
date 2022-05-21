@@ -1,13 +1,7 @@
 import React, { useState } from "react";
 import "./navbar.css";
-import {
-  FaFacebookSquare,
-  FaInstagramSquare,
-  FaYoutubeSquare,
-} from "react-icons/fa";
 import { GiHamburgerMenu } from "react-icons/gi";
-
-import { NavLink } from "react-router-dom";
+import { Link} from "react-router-dom";
 
 const Navbar = () => {
   const [showMediaIcons, setShowMediaIcons] = useState(false);
@@ -16,10 +10,10 @@ const Navbar = () => {
       <nav className="main-nav">
         {/* 1st logo part  */}
         <div className="logo">
-          <h2>
-            <span>T</span>hapa
-            <span>T</span>echnical
-          </h2>
+        <Link to="/">     <h2 >
+            
+            <span>S</span>chool
+          </h2></Link>
         </div>
 
         {/* 2nd menu part  */}
@@ -29,51 +23,29 @@ const Navbar = () => {
           }>
           <ul>
             <li>
-              <NavLink to="/">Home</NavLink>
+              <Link to="/">HOME</Link>
             </li>
             <li>
-              <NavLink to="/about">about</NavLink>
+     {/*         <Link to="/gallery">Gallery</Link>
+            </li>
+        <li> */}
+              <Link to="/about">ABOUT</Link>
             </li>
             <li>
-              <NavLink to="/service">services</NavLink>
-            </li>
-            <li>
-              <NavLink to="/contact">contact</NavLink>
+              <Link to="/contact">CONTACT</Link>
             </li>
           </ul>
         </div>
 
         {/* 3rd social media links */}
         <div className="social-media">
-          <ul className="social-media-desktop">
-            <li>
-              <a
-                href="https://www.youtube.com/channel/UCwfaAHy4zQUb2APNOGXUCCA"
-                target="_thapa">
-                <FaFacebookSquare className="facebook" />
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.instagram.com/thapatechnical/"
-                target="_thapa">
-                <FaInstagramSquare className="instagram" />
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.youtube.com/channel/UCwfaAHy4zQUb2APNOGXUCCA"
-                target="_thapa">
-                <FaYoutubeSquare className="youtube" />
-              </a>
-            </li>
-          </ul>
+      
 
           {/* hamburget menu start  */}
           <div className="hamburger-menu">
-            <a href="#" onClick={() => setShowMediaIcons(!showMediaIcons)}>
+            <h1  onClick={() => setShowMediaIcons(!showMediaIcons)}>
               <GiHamburgerMenu />
-            </a>
+            </h1>
           </div>
         </div>
       </nav>

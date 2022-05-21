@@ -79,7 +79,7 @@ li {
   font-weight: 400;
   text-transform: uppercase;
   background: -webkit-linear-gradient(#eee, rgb(69, 57, 248));
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -91,16 +91,28 @@ li {
   font-size: 1.8rem;
 }
 
-.menu-link ul li a {
-  text-transform: capitalize;
-  color: rgba(0, 0, 3, 0.8);
-  transition: 0.5s;
+nav.main-link ul li a {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
 }
-.menu-link ul li:hover > a {
-  transform-origin: left;
-  color: rgba(0, 0, 3, 1);
-  text-decoration: underline;
-  transition: 0.5s;
+nav.main-link ul li a:after {
+  display: block;
+  position: absolute;
+  margin: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  content: '.';
+  color: transparent;
+  width: 1px;
+  height: 1px;
+  border-radius: 50%;
+  background: transparent;
+}
+nav.main-link ul li a:hover:after {
+  animation: circle 1.5s ease-in forwards;
 }
 
 .social-media ul li {
