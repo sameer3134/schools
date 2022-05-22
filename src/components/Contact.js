@@ -5,8 +5,9 @@ const Contact = () => {
   function submitemail(e){
     e.preventDefault();
 
-    emailjs.sendForm('service_1hrbgb9','template_r26ut4f',e.target)
+    emailjs.sendForm('service_1hrbgb9','template_r26ut4f',e.target,'aseghS1oT6oOSv3iL')
   .then(res=>{
+    alert("Message successfully")
     console.log(res);
   }).catch(err=> console.log(err));}
   return (
@@ -39,10 +40,11 @@ const Contact = () => {
   <div className="contacts contact-wrapper">
 
     <ul>
-      <h2>Manager Name-Suman Yadav</h2>
+      <h2>Principal Name- Mr. Drigpal Singh</h2>
       <span className="hightlight-contact-info">
         <li className="email-info"><i className="fa fa-envelope" aria-hidden="true"></i> sundaraintercollege@gmail.com</li>
         <li><i className="fa fa-phone" aria-hidden="true"></i> <span className="highlight-text">+91 9554340853</span></li>
+        <li><i className="fa fa-map-marker" aria-hidden="true"></i> Lalpur(R.S) Muridpur (Ward no.8) Jashwat Nagar,Kanpur</li>
       </span>
     </ul>
   </div>
