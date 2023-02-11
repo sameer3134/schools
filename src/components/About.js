@@ -12,7 +12,7 @@ const About = () => {
                <h5>#About</h5>
                <p>
                Sundara Shikshan Sansthan Inter College was established in 2011.The school consists of Grades from 1 to 12. The school is Co-educational 
-        and it have an attached pre-primary section. The school is N/A in nature and is not using school building as a shift-school. English is the medium
+        and it have an attached pre-primary section. The school is N/A in nature and is not using school building as a shift-school. Hindi is the medium
         of instructions in this school. This school is approachable by all weather road.
         This institution is open for all communities, irrespective of status, castes, creed and religion. 
         lt imparts not only academic education to children, but also helps them to form an integrated personality by 
