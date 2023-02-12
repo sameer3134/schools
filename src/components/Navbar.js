@@ -34,6 +34,9 @@ const Navbar = () => {
             <li>
               <Link to="/contact">CONTACT</Link>
             </li>
+            <li>
+              <Link to="/gallery">GALLERY</Link>
+            </li>
           </ul>
         </div>
 

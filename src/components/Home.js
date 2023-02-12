@@ -1,6 +1,7 @@
 import React from 'react'
 import About from './About';
 import Contact from './Contact';
+import Gallery from './Gallery';
 import "./home.css";
 
 
@@ -14,6 +15,8 @@ const Home = () => {
     </div>
    <center><hr className="one"/></center> 
    <About />
+   <center><hr className="one"/></center> 
+   <Gallery />
       <center><hr className="one"/></center> 
     <Contact />
    </div>
